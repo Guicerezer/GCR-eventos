@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GCR Eventos — sonorização, iluminação e DJ para casamentos, festas de 15 anos e eventos sociais.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/services.css">
+    <link rel="stylesheet" href="src/styles/gallery.css">
+    <link rel="stylesheet" href="src/styles/reviews.css">
+    <link rel="stylesheet" href="src/styles/contact.css">
+    <link rel="stylesheet" href="src/styles/lightbox.css">
+    <link rel="icon" type="image/png" href="imagens/icone site.png">
+
+    <title>GCR Eventos — Sonorização, Iluminação e DJ</title>
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <img src="imagens/logo-gcr-transparente.png" id="nav_logo" alt="GCR Eventos">
+            <ul id="nav_list">
+                <li class="nav-item active"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#trabalho">Serviços</a></li>
+                <li class="nav-item"><a href="#fotos">Galeria</a></li>
+                <li class="nav-item"><a href="#avaliacoes">Avaliações</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
+            </ul>
+
+          <button class="btn-default" id="nav-cta-btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Entre em contato</button>
+
+            <button id="mobile_btn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#trabalho">Serviços</a></li>
+                <li class="nav-item"><a href="#fotos">Galeria</a></li>
+                <li class="nav-item"><a href="#avaliacoes">Avaliações</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
+            </ul>
+           <button class="btn-default" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Entre em contato</button>
+        </div>
+        <div id="mobile_overlay"></div>
+    </header>
+
+    <main id="content">
+
+        <!-- ===================== HERO ===================== -->
+        <section id="home">
+            <div class="hero-bg">
+                <img src="imagens/Foto capa 2.jpg" alt="Pista de dança decorada com iluminação profissional em festa de 15 anos">
+            </div>
+
+            <div id="cta">
+                <span class="kicker"><i class="fa-solid fa-music"></i> Som · Luz · DJ</span>
+
+                <h1 class="title">
+                    Vamos realizar <span>seu sonho!</span>
+                </h1>
+
+                <p class="description">
+                    Sonorização, iluminação e DJ para casamentos, festas de 15 anos
+                    e celebrações que merecem ser inesquecíveis. A GCR Eventos
+                    cuida de cada detalhe para sua festa ser perfeita do início ao fim.
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn-default" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+                        Solicitar orçamento
+                    </button>
+
+                    <div class="social-media-buttons">
+                        <a href="https://wa.me/message/QBJC3VHHKVRFM1" aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gcr_eventos?igsh=MTR4ZDg5d3NoeDJrYQ%3D%3D&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong class="counter" data-target="50" data-prefix="+" data-suffix="">+50</strong>
+                        <span>Eventos realizados</span>
+                    </div>
+                    <div>
+                        <strong class="counter" data-target="3" data-prefix="" data-suffix=" anos">3 anos</strong>
+                        <span>De experiência</span>
+                    </div>
+                    <div>
+                        <strong class="counter" data-target="10" data-prefix="+" data-suffix=" cidades">+10 cidades</strong>
+                        <span>atendidas</span>
+                    </div>
+                    <div>
+                        <strong class="counter" data-target="300" data-prefix="+" data-suffix=" horas">+250</strong>
+                        <span>em eventos realizados</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-cue">
+                <span class="line"></span>
+                Role para ver mais
+            </div>
+        </section>
+
+        <!-- ===================== SERVIÇOS ===================== -->
+        <section id="trabalho">
+            <div class="section-head reveal">
+                <span class="eyebrow">O que fazemos</span>
+                <h2 class="section-title">Tudo que sua festa <em>precisa</em>, em um só lugar</h2>
+                <p class="section-subtitle">
+                    Equipamento profissional, equipe experiente e atenção aos detalhes
+                    para que você só precise se preocupar em curtir o seu evento.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-volume-high"></i></div>
+                    <h3>Sonorização</h3>
+                    <p>Equipamentos novos e profissionais para cada tipo de ambiente, garantindo som potente e limpo do início ao fim da festa.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-circle"></i> Caixas e subwoofers profissionais</li>
+                        <li><i class="fa-solid fa-circle"></i> Microfones para cerimônia e discursos</li>
+                        <li><i class="fa-solid fa-circle"></i> Técnico de som presente no evento</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>Iluminação</h3>
+                    <p>Luz que transformam o ambiente e acompanham cada momento da celebração, da cerimônia à pista.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-circle"></i> Iluminação decorativa e cênica</li>
+                        <li><i class="fa-solid fa-circle"></i> Pista iluminada e efeitos especiais</li>
+                        <li><i class="fa-solid fa-circle"></i> Projeto de luz personalizado</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-headphones"></i></div>
+                    <h3>DJ</h3>
+                    <p>Repertório construído com você para manter a pista cheia, respeitando o estilo e o público do seu evento.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-circle"></i> Set personalizado por momento da festa</li>
+                        <li><i class="fa-solid fa-circle"></i> Reuniões previas para alinhamento de repertorio personalizado</li>
+                        <li><i class="fa-solid fa-circle"></i> Animação do começo ao fim</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== GALERIA ===================== -->
+        <section id="fotos">
+            <div class="section-head reveal">
+                <span class="eyebrow">Trabalhos realizados</span>
+                <h2 class="section-title">Momentos que já <em>ajudamos</em> a criar</h2>
+                <p class="section-subtitle">
+                    Um pouco dos eventos que tivemos a honra de sonorizar e iluminar.
+                </p>
+            </div>
+<div class="gallery-grid reveal" id="gallery-grid">
+            </div>
+
+            <p class="gallery-note"><i class="fa-solid fa-circle-info"></i> Clique em qualquer foto ou vídeo para ver em tamanho maior.</p>
+        </section>
+
+       
+        <!-- ===================== AVALIAÇÕES ===================== -->
+        <section id="avaliacoes">
+            <div class="section-head reveal">
+                <span class="eyebrow">Avaliações</span>
+                <h2 class="section-title">Quem contratou, <em>recomenda</em></h2>
+                <p class="section-subtitle">
+                    A satisfação de quem viveu o evento é o que nos motiva a continuar.
+                </p>
+            </div>
+
+            <div class="reviews-grid reveal">
+                <div class="review-card">
+                <span class="stars">★★★★★</span>
+                    <div class="reviewer">
+                        <div class="avatar">L</div>
+                        <div>
+                            <strong>Leydiane Gomes</strong>
+                            <span>Casamento</span>
+                        </div>
+                    </div>
+                     <p class="quote">Guilhermee, você e sua equipe foram incríveis, não temos palavras para descrever e agradecer o trabalho excelente que vocês prestaram, super prestativos e atenciosos desde quando fechamos o contrato! agradecemos de coração por nos proporcionar uma festa inesquecível que Deus abençoe muito a vida de vocês! 🫶🏻</p>
+                </div>
+                
+                 <div class="review-card">
+                <span class="stars">★★★★★</span>
+                    <div class="reviewer">
+                        <div class="avatar">A</div>
+                        <div>
+                            <strong>Amanda Custodio</strong>
+                            <span>Aniversario</span>
+                        </div>
+                    </div>
+                     <p class="quote">Excelente trabalho! Obrigado por fazer parte desse momento e tornar meu dia ainda mais especial. Gratidão 🙏                                                                                                                                                                                                            </p>
+                </div>
+
+                <div class="review-card">
+                    <span class="stars">★★★★★</span>
+                    <div class="reviewer">
+                        <div class="avatar">A</div>
+                        <div>
+                            <strong> Ana </strong>
+                            <span>Casamento</span>
+                        </div>
+                    </div>
+                    <p class="quote">Amamos seu trabalho Guilherme, muito obrigada por tudo! </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTATO ===================== -->
+        <section id="contato">
+            <div class="contact-panel reveal">
+                <div class="contact-info">
+                    <h2>Vamos planejar <em>seu evento?</em></h2>
+                    <p>Conte um pouco sobre a sua festa e te respondemos com um orçamento personalizado em poucas horas.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-row">
+                            <span class="icon-circle"><i class="fa-brands fa-whatsapp"></i></span>
+                            <span>(19) 99611-0327</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon-circle"><i class="fa-solid fa-envelope"></i></span>
+                            <span>Eventosgcr.adm@gmail.com</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon-circle"><i class="fa-solid fa-location-dot"></i></span>
+                            <span>Amparo e região, SP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="tel" placeholder="WhatsApp" required>
+                    </div>
+                    <select required>
+                        <option value="" disabled selected>Tipo de evento</option>
+                        <option>Casamento</option>
+                        <option>Festa de 15 anos</option>
+                        <option>Evento corporativo</option>
+                        <option>Outro</option>
+                    </select>
+                    <input type="date" placeholder="Data do evento">
+                    <input type="text" placeholder="Local do evento">
+                    <textarea placeholder="Conte um pouco sobre o evento..." rows="3"></textarea>
+                    <button type="submit" class="btn-default">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ===================== LIGHTBOX DA GALERIA ===================== -->
+<div id="lightbox" class="lightbox">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Fechar">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Próximo">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="lightbox-caption" id="lightbox-caption"></span>
+</div>
+
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="imagens/logo-gcr-transparente.png" alt="GCR Eventos">
+                <span>Sonorização · Iluminação · DJ</span>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#trabalho">Serviços</a></li>
+                <li><a href="#fotos">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/message/QBJC3VHHKVRFM1" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/gcr_eventos?igsh=MTR4ZDg5d3NoeDJrYQ%3D%3D&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 GCR Eventos. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/message/QBJC3VHHKVRFM1" class="whatsapp-float" aria-label="Fale no WhatsApp" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

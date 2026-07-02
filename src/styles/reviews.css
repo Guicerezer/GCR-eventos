@@ -1,0 +1,71 @@
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.review-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-card .stars {
+  color: var(--color-gold);
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+}
+
+.review-card .reviewer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.review-card .reviewer .avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-hover));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: #19140a;
+  flex-shrink: 0;
+}
+
+.review-card .reviewer strong {
+  font-size: 0.92rem;
+  color: var(--color-text);
+  display: block;
+}
+
+.review-card .reviewer span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.review-card p.quote {
+  font-size: 0.98rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}

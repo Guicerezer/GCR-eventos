@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap');
+
+:root {
+  /* Cores */
+  --color-bg: #0d0b1a;
+  --color-surface: #171430;
+  --color-surface-2: #1f1b3d;
+  --color-gold: #f3cc0c;
+  --color-gold-hover: #fcb103;
+  --color-text: #f5f1e8;
+  --color-text-muted: #b9b3d6;
+  --color-border: rgba(243, 204, 12, 0.16);
+
+  /* Tipografia */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  /* Layout */
+  --max-width: 1280px;
+  --section-padding: 100px 8%;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-body);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+section {
+  padding: var(--section-padding);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 64px 6%;
+  }
+}
+
+/* ---------- Utilitários compartilhados ---------- */
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  color: var(--color-text);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 56px;
+}
+
+.section-head .section-subtitle {
+  max-width: 600px;
+}
+
+/* ---------- Botões ---------- */
+
+.btn-default {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--color-gold);
+  color: #19140a;
+  border-radius: var(--radius-sm);
+  padding: 13px 26px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  box-shadow: 0 4px 18px rgba(243, 204, 12, 0.22);
+  cursor: pointer;
+  transition: background-color .25s ease, transform .25s ease;
+  white-space: nowrap;
+}
+
+.btn-default:hover {
+  background-color: var(--color-gold-hover);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1.5px solid var(--color-gold);
+  background: transparent;
+  color: var(--color-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: var(--radius-sm);
+  padding: 13px 26px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color .25s ease, color .25s ease, transform .25s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-gold);
+  color: #19140a;
+  transform: translateY(-2px);
+}
+
+/* ---------- Redes sociais ---------- */
+
+.social-media-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--color-gold);
+  transition: background-color .25s ease, transform .25s ease, color .25s ease;
+}
+
+.social-media-buttons a:hover {
+  background-color: var(--color-gold);
+  color: #19140a;
+  transform: translateY(-3px);
+}
+
+/* ---------- Divisor com facho de luz (assinatura visual) ---------- */
+
+.beam-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 0 auto 50px;
+  width: fit-content;
+}
+
+.beam-divider .beam-line {
+  width: 70px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold));
+}
+
+.beam-divider .beam-line.right {
+  background: linear-gradient(90deg, var(--color-gold), transparent);
+}
+
+.beam-divider i {
+  color: var(--color-gold);
+  font-size: 0.85rem;
+}
+
+/* ---------- Reveal on scroll ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Foco visível (acessibilidade) ---------- */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { transition: none; opacity: 1; transform: none; }
+}
